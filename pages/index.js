@@ -9,15 +9,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="md:flex gap-8 max-w-[500px] m-auto">
-          <div>
+        <div className="md:flex gap-8 max-w-[500px] mx-auto mt-8">
+          <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
             <img
+              className="rounded-xl"
               src="https://geniusdevs.com/themeforest/icard/icard/assets/images/main-img.jpg"
               alt="profile picture"
             />
           </div>
           <div>
-            <span className="bg-primary text-on-primary px-2 py-1 inline-block uppercase font-semibold">
+            <span className="bg-primary text-on-primary px-2 py-1 inline-block uppercase font-semibold rounded-sm">
               Hello
             </span>
             <h1 className="uppercase text-black text-xl font-bold">
@@ -27,7 +28,9 @@ export default function Home() {
               I eat E-80 cake
             </h2>
             <p>{description}</p>
-            <button>Portfolio</button>
+            <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
+              Portfolio
+            </button>
           </div>
         </div>
       </main>

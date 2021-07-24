@@ -4,16 +4,40 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-prose;
-  @apply text-base;
-  @apply font-body;
+@layer base {
+  body {
+    @apply text-prose;
+    @apply text-base;
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-heading;
+
+@layer components {
+  .ProfilePictureFrame::after {
+    content: "";
+    @apply absolute;
+    width: 120%;
+    right: 0;
+    height: 150%;
+    bottom: 0;
+    @apply bg-primary;
+    @apply origin-bottom-right;
+    @apply transform rotate-[330deg];
+  }
+  .ProfilePictureFrame {
+    @apply relative;
+    overflow: hidden;
+  }
+  .ProfilePictureFrame img {
+    @apply relative;
+    @apply z-10;
+  }
 }
