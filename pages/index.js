@@ -22,7 +22,7 @@ export default function Home() {
               Hello
             </span>
             <h1 className="uppercase text-black text-xl font-bold">
-              I&apos;m <strong className="text-primary">Fuszi</strong>
+              I&apos;m <strong className="text-primary">Zsofia Florek</strong>
             </h1>
             <h2 className="text-black text-lg uppercase font-semibold">
               I eat E-80 cake
