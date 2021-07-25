@@ -38,4 +38,20 @@
     @apply relative;
     @apply z-10;
   }
+  .GreetingBox {
+    @apply bg-primary text-on-primary px-2 py-1 inline-block uppercase font-semibold rounded-sm;
+    @apply relative;
+  }
+  .GreetingBox::after {
+    content: "";
+    @apply absolute;
+    left: 0.3em;
+    bottom: -0.8em;
+    width: 0;
+    height: 0;
+    @apply border-primary;
+    border-right: 0.8em solid transparent;
+    border-top-width: 0.8em;
+    border-top-style: solid;
+  }
 }

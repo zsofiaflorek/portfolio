@@ -18,9 +18,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <span className="bg-primary text-on-primary px-2 py-1 inline-block uppercase font-semibold rounded-sm">
-              Hello
-            </span>
+            <span className="GreetingBox">Hello</span>
             <h1 className="uppercase text-black text-xl font-bold">
               I&apos;m <strong className="text-primary">Zsofia Florek</strong>
             </h1>
