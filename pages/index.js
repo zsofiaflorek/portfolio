@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
+import Sophie from "../public/Sophie.jpg";
 
 export default function Home() {
   return (
@@ -11,11 +13,15 @@ export default function Home() {
       <main>
         <div className="md:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16">
           <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
-            <img
-              className="rounded-xl"
-              src="https://geniusdevs.com/themeforest/icard/icard/assets/images/main-img.jpg"
-              alt="profile picture"
-            />
+            <div className=" bg-white rounded-xl">
+              <Image
+                layout="responsive"
+                className="rounded-xl"
+                src={Sophie}
+                alt="profile picture"
+                priority
+              />
+            </div>
           </div>
           <div>
             <span className="GreetingBox">Hello</span>

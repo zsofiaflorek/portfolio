@@ -34,7 +34,7 @@
     @apply relative;
     overflow: hidden;
   }
-  .ProfilePictureFrame img {
+  .ProfilePictureFrame > * {
     @apply relative;
     @apply z-10;
   }
