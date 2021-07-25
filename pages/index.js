@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="md:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16">
+      <main className="lg:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16 px-6">
         <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
           <div className=" bg-white rounded-xl">
             <Image
