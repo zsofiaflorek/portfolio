@@ -10,32 +10,30 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <div className="md:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16">
-          <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
-            <div className=" bg-white rounded-xl">
-              <Image
-                layout="responsive"
-                className="rounded-xl"
-                src={Sophie}
-                alt="profile picture"
-                priority
-              />
-            </div>
+      <main className="md:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16">
+        <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
+          <div className=" bg-white rounded-xl">
+            <Image
+              layout="responsive"
+              className="rounded-xl"
+              src={Sophie}
+              alt="profile picture"
+              priority
+            />
           </div>
-          <div>
-            <span className="GreetingBox">Hello</span>
-            <h1 className="uppercase text-black text-xl font-bold mt-6">
-              I&apos;m <strong className="text-primary">Zsofia Florek</strong>
-            </h1>
-            <h2 className="text-black text-lg uppercase font-semibold">
-              I eat E-80 cake
-            </h2>
-            <p className="my-6">{description}</p>
-            <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
-              Portfolio
-            </button>
-          </div>
+        </div>
+        <div>
+          <span className="GreetingBox">Hello</span>
+          <h1 className="uppercase text-black text-xl font-bold mt-6">
+            I&apos;m <strong className="text-primary">Zsofia Florek</strong>
+          </h1>
+          <h2 className="text-black text-lg uppercase font-semibold">
+            I eat E-80 cake
+          </h2>
+          <p className="my-6">{description}</p>
+          <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
+            Portfolio
+          </button>
         </div>
       </main>
     </div>
