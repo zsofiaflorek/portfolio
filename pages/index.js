@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="md:flex gap-8 max-w-[500px] mx-auto mt-8">
+        <div className="md:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16">
           <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
             <img
               className="rounded-xl"
@@ -19,13 +19,13 @@ export default function Home() {
           </div>
           <div>
             <span className="GreetingBox">Hello</span>
-            <h1 className="uppercase text-black text-xl font-bold">
+            <h1 className="uppercase text-black text-xl font-bold mt-6">
               I&apos;m <strong className="text-primary">Zsofia Florek</strong>
             </h1>
             <h2 className="text-black text-lg uppercase font-semibold">
               I eat E-80 cake
             </h2>
-            <p>{description}</p>
+            <p className="my-6">{description}</p>
             <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
               Portfolio
             </button>

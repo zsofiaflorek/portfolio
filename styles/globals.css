@@ -39,7 +39,7 @@
     @apply z-10;
   }
   .GreetingBox {
-    @apply bg-primary text-on-primary px-2 py-1 inline-block uppercase font-semibold rounded-sm;
+    @apply bg-primary text-on-primary px-2.5 py-0.5 inline-block uppercase font-semibold rounded-sm;
     @apply relative;
   }
   .GreetingBox::after {
