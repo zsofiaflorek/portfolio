@@ -32,6 +32,7 @@ export default function Home() {
           </h2>
           <p className="my-6">{description}</p>
           <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
+            <i className="fas fa-th-list mr-2" />
             Portfolio
           </button>
         </div>
