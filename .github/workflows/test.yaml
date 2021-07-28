@@ -1,0 +1,38 @@
+name: CI test pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Lint
+        run: npm run lint
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Build
+        run: npm run build
