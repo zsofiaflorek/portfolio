@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Sophie from "../public/Sophie.jpg";
+import { Layout } from "../components/layout";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="lg:flex gap-8 md:max-w-[500px] lg:max-w-[1000px] md:mx-auto mt-10 mb-16 px-6 lg:items-center">
+      <Layout className="lg:flex lg:items-center lg:gap-8">
         <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8 lg:w-[500px]">
           <div className=" bg-white rounded-xl ">
             <Image
@@ -36,7 +37,7 @@ export default function Home() {
             Portfolio
           </button>
         </div>
-      </main>
+      </Layout>
     </div>
   );
 }
