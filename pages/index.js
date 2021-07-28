@@ -10,9 +10,9 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="lg:flex gap-8 max-w-[500px] mx-auto mt-10 mb-16 px-6">
-        <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8">
-          <div className=" bg-white rounded-xl">
+      <main className="lg:flex gap-8 md:max-w-[500px] lg:max-w-[1000px] md:mx-auto mt-10 mb-16 px-6 lg:items-center">
+        <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8 lg:w-[500px]">
+          <div className=" bg-white rounded-xl ">
             <Image
               layout="responsive"
               className="rounded-xl"
@@ -22,7 +22,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div>
+        <div className="lg:flex-1">
           <span className="GreetingBox">Hello</span>
           <h1 className="uppercase text-black text-xl font-bold mt-6">
             I&apos;m <strong className="text-primary">Zsofia Florek</strong>
