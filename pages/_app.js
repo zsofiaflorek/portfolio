@@ -1,7 +1,11 @@
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return 5;
+  return (
+    <div className="bg-yellow-500 font-semibold">
+      <Component {...pageProps} />;
+    </div>
+  );
 }
 
-export default 67;
+export default MyApp;
