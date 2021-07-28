@@ -2,19 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@layer base {
+  body {
+    @apply text-prose;
+    @apply text-base;
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+  .ProfilePictureFrame::after {
+    content: "";
+    @apply absolute;
+    width: 120%;
+    right: 0;
+    height: 150%;
+    bottom: 0;
+    @apply bg-primary;
+    @apply origin-bottom-right;
+    @apply transform rotate-[330deg];
+  }
+  .ProfilePictureFrame {
+    @apply relative;
+    overflow: hidden;
+  }
+  .ProfilePictureFrame > * {
+    @apply relative;
+    @apply z-10;
+  }
+  .GreetingBox {
+    @apply bg-primary text-on-primary px-2.5 py-0.5 inline-block uppercase font-semibold rounded-sm;
+    @apply relative;
+  }
+  .GreetingBox::after {
+    content: "";
+    @apply absolute;
+    left: 0.3em;
+    bottom: -0.8em;
+    width: 0;
+    height: 0;
+    @apply border-primary;
+    border-right: 0.8em solid transparent;
+    border-top-width: 0.8em;
+    border-top-style: solid;
+  }
 }
