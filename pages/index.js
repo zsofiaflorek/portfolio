@@ -5,7 +5,7 @@ import { Layout } from "../components/layout";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Zsofia Florek - Personal Portfolio</title>
         <meta name="description" content={description} />
@@ -37,7 +37,7 @@ export default function Home() {
           </button>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }
 

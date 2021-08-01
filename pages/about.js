@@ -4,7 +4,7 @@ import { Card } from "../components/card";
 
 export default function AboutPage() {
   return (
-    <div>
+    <>
       <Head>
         <title>Zsofia Florek - About</title>
       </Head>
@@ -16,6 +16,6 @@ export default function AboutPage() {
           <button>Download my CV</button>
         </Card>
       </Layout>
-    </div>
+    </>
   );
 }
