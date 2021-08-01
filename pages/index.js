@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout className="lg:flex lg:items-center lg:gap-8">
+      <Layout className="lg:flex lg:items-center lg:gap-8 ">
         <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8 lg:w-[500px]">
           <div className=" bg-white rounded-xl ">
             <Image
