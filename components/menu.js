@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { MenuItem } from "./menuItem";
 
 export function Menu() {
@@ -8,7 +7,7 @@ export function Menu() {
         <h1 className="text-primary text-md mt-2">Zsofia Florek</h1>
         <ul className="flex gap-10 justify-end py-4">
           <MenuItem href="/">Home</MenuItem>
-          <MenuItem href="/">About</MenuItem>
+          <MenuItem href="/about">About</MenuItem>
           <MenuItem href="/">Portfolio</MenuItem>
           <MenuItem href="/">Contact</MenuItem>
         </ul>

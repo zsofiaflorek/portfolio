@@ -14,6 +14,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             async
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

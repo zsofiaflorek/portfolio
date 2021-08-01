@@ -9,7 +9,6 @@ export default function Home() {
       <Head>
         <title>Zsofia Florek - Personal Portfolio</title>
         <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout className="lg:flex lg:items-center lg:gap-8 ">
         <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8 lg:w-[500px]">
