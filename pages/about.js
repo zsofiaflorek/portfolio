@@ -14,7 +14,7 @@ export default function AboutPage() {
           About <strong className="text-primary">Me</strong>
         </h1>
         <Card>
-          <Button>Download my CV</Button>
+          <Button icon="fas fa-download">Download my CV</Button>
         </Card>
         <div className="lg:flex justify-between items-center my-6">
           <CVCard title="Professional skills" className="mb-8">
