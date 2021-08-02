@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-export function Button({ children, heavy }) {
+export function Button({ children, heavy, icon }) {
   return (
     <button
       className={classNames(
@@ -8,6 +8,7 @@ export function Button({ children, heavy }) {
         { "font-semibold": heavy }
       )}
     >
+      {icon ? <i className={classNames("mr-2", icon)} /> : null}
       {children}
     </button>
   );

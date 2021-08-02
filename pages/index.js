@@ -32,8 +32,7 @@ export default function Home() {
             I eat E-80 cake
           </h2>
           <p className="my-6">{description}</p>
-          <Button heavy>
-            <i className="fas fa-th-list mr-2" />
+          <Button heavy icon="fas fa-th-list">
             Portfolio
           </Button>
         </div>
