@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Layout } from "../components/layout";
-import { Card } from "../components/card";
+import { Card, CVCard } from "../components/card";
+import { Button } from "../components/button";
 
 export default function AboutPage() {
   return (
@@ -13,9 +14,29 @@ export default function AboutPage() {
           About <strong className="text-primary">Me</strong>
         </h1>
         <Card>
-          <button>Download my CV</button>
+          <Button>Download my CV</Button>
         </Card>
+        <div className="lg:flex justify-between items-center my-6">
+          <CVCard title="Professional skills" className="mb-8">
+            <SkillBar tech="CSS" percentage="80%" />
+            <SkillBar tech="HTML" percentage="40%" />
+            <SkillBar tech="JS" percentage="70%" />
+          </CVCard>
+          <CVCard title="Professional skills">
+            <SkillBar tech="CSS" percentage="80%" />
+            <SkillBar tech="HTML" percentage="40%" />
+            <SkillBar tech="JS" percentage="70%" />
+          </CVCard>
+        </div>
       </Layout>
     </>
+  );
+}
+export function SkillBar({ tech, percentage }) {
+  return (
+    <div className="flex justify-between">
+      <div>{tech}</div>
+      <div>{percentage}</div>
+    </div>
   );
 }
