@@ -72,4 +72,24 @@
     );
     background-size: 1rem 1rem;
   }
+
+  .TimelineItem {
+    @apply relative my-4 pl-5 border-l-3 border-progressbar hover:border-primary transition duration-500;
+  }
+  .TimelineItem::before,
+  .TimelineItem::after {
+    content: "";
+    @apply absolute border-primary border-2 border-solid;
+    left: -9px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .TimelineItem::before {
+    top: -1px;
+  }
+  .TimelineItem::after {
+    bottom: -1px;
+  }
 }
