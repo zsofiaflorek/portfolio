@@ -16,8 +16,8 @@ export default function AboutPage() {
         <Card>
           <Button icon="fas fa-download">Download my CV</Button>
         </Card>
-        <div className="lg:flex justify-between items-center my-6">
-          <CVCard title="Professional skills" className="mb-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-6 my-6">
+          <CVCard title="Professional skills">
             <SkillBar tech="CSS" percentage="80%" />
             <SkillBar tech="HTML" percentage="40%" />
             <SkillBar tech="JS" percentage="70%" />
@@ -34,9 +34,18 @@ export default function AboutPage() {
 }
 export function SkillBar({ tech, percentage }) {
   return (
-    <div className="flex justify-between">
-      <div>{tech}</div>
-      <div>{percentage}</div>
+    <div>
+      <div className="flex justify-between pt-2">
+        <div className="font-semibold text-base uppercase text-left leading-7">
+          {tech}
+        </div>
+        <div className="font-semibold text-base uppercase text-right leading-7">
+          {percentage}
+        </div>
+      </div>
+      <div className="ProgressBar">
+        <div className="Progress" style={{ width: percentage }} />
+      </div>
     </div>
   );
 }

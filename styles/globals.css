@@ -54,4 +54,22 @@
     border-top-width: 0.8em;
     border-top-style: solid;
   }
+  .ProgressBar {
+    @apply bg-progressbar relative rounded;
+    height: 15px;
+  }
+  .Progress {
+    @apply absolute top-0 left-0 bottom-0 bg-primary rounded;
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 1rem 1rem;
+  }
 }

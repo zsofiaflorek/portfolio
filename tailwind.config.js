@@ -13,6 +13,7 @@ module.exports = {
       white: colors.white,
       prose: colors.blueGray[600],
       primary: colors.pink[700],
+      progressbar: colors.gray[200],
       "on-primary": colors.white,
     },
     fontSize: {
