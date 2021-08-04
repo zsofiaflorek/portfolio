@@ -18,6 +18,14 @@
   }
 }
 
+@layer utilities {
+  @variants responsive {
+    .text-indent {
+      text-indent: 2rem;
+    }
+  }
+}
+
 @layer components {
   .ProfilePictureFrame::after {
     content: "";
