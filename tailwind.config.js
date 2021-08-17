@@ -13,6 +13,7 @@ module.exports = {
       white: colors.white,
       prose: colors.blueGray[600],
       primary: colors.pink[700],
+      progressbar: colors.gray[200],
       "on-primary": colors.white,
     },
     fontSize: {
@@ -23,9 +24,21 @@ module.exports = {
       xl: ["2.5rem", "3rem"],
       xxl: ["2.81rem", "3rem"],
     },
+    boxShadow: {
+      sm: "0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%)",
+      DEFAULT: "0px 5px 20px 0px rgb(0 37 93 / 15%)",
+    },
     fontFamily: {
       body: "'Open Sans', sans-serif",
       heading: "'Josefin Sans', sans-serif",
+    },
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0",
+      2: "2px",
+      3: "3px",
+      4: "4px",
+      6: "6px",
     },
     extend: {},
   },

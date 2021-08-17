@@ -2,17 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Sophie from "../public/Sophie.jpg";
 import { Layout } from "../components/layout";
+import { Button } from "../components/button";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Zsofia Florek - Personal Portfolio</title>
         <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout className="lg:flex lg:items-center lg:gap-8 ">
-        <div className="ProfilePictureFrame p-8 shadow-xl rounded-xl mb-8 lg:w-[500px]">
+        <div className="ProfilePictureFrame p-8 shadow rounded-xl mb-8 lg:w-[500px]">
           <div className=" bg-white rounded-xl ">
             <Image
               layout="responsive"
@@ -32,13 +32,12 @@ export default function Home() {
             I eat E-80 cake
           </h2>
           <p className="my-6">{description}</p>
-          <button className="uppercase text-on-primary bg-primary px-4 py-2 rounded-md font-semibold">
-            <i className="fas fa-th-list mr-2" />
+          <Button heavy icon="fas fa-th-list">
             Portfolio
-          </button>
+          </Button>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }
 
