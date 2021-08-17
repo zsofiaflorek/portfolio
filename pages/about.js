@@ -72,7 +72,7 @@ export default function AboutPage() {
           <CVCard title="Education">
             <TimelineItem
               title="University of the Incarnate Word"
-              subtitle="BSc in CSS"
+              subtitle="BSc in CSSSSSS"
               timeframe="2019 - Present"
               description="The University of British Columbia is a public research university with campuses in Vancouver and Kelowna, British Columbia."
             />
