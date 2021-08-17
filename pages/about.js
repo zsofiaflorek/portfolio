@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Card, CVCard } from "../components/card";
 import { Button } from "../components/button";
-import Sophie from "../public/Sophie.jpg";
+import Personal from "../public/personal.jpg";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
               <Image
                 layout="responsive"
                 className="rounded-lg h-full"
-                src={Sophie}
+                src={Personal}
                 alt="profile picture"
                 priority
               />
@@ -33,7 +33,7 @@ export default function AboutPage() {
                     layout="fill"
                     className=""
                     objectFit="contain"
-                    src={Sophie}
+                    src={Personal}
                     alt="profile picture"
                     priority
                   />
