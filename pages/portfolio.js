@@ -15,27 +15,44 @@ export default function PortfolioPage() {
           My
           <Strong> Portfolio</Strong>
         </PageTitle>
-        <PortfolioCard />
+        <PortfolioCard
+          image={Sophie}
+          header="Weather app"
+          secondarytitle="Up-to-date weather forecast"
+          text="Hello szia en vagyok az elso elem"
+        />
+        <PortfolioCard
+          image={Sophie}
+          header="Weather app"
+          secondarytitle="Up-to-date weather forecast"
+          text="Hello szia en vagyok az elso elem"
+        />
+        <PortfolioCard
+          image={Sophie}
+          header="Weather app"
+          secondarytitle="Up-to-date weather forecast"
+          text="Hello szia en vagyok az elso elem"
+        />
       </Layout>
     </>
   );
 }
 
-export function PortfolioCard() {
+export function PortfolioCard({ image, header, secondarytitle, text }) {
   return (
-    <article className="bg-white rounded-xl shadow overflow-hidden">
+    <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
         <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
-          <Image alt="kep" src={Sophie} layout="fill" objectFit="cover" />
+          <Image alt="kep" src={image} layout="fill" objectFit="cover" />
         </div>
         <div className="p-8">
           <div className="uppercase tracking-wide text-sm text-primary font-semibold">
-            Weather App
+            {header}
           </div>
           <h3 className="mt-1 text-lg leading-tight font-medium text-black ">
-            Up-to-date weather forecast
+            {secondarytitle}
           </h3>
-          <p className="mt-2 text-black">Hello szia en vagyok az elso elem</p>
+          <p className="mt-2 text-black">{text}</p>
         </div>
       </div>
     </article>
