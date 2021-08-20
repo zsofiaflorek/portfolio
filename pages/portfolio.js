@@ -3,6 +3,9 @@ import { Layout } from "../components/layout";
 import PageTitle, { Strong } from "../components/pageTitle";
 import Image from "next/image";
 import Sophie from "../public/Sophie.jpg";
+import Badge from "../components/badge";
+
+const badgearray = ["HTML", "CSS", "React", "JS"];
 
 export default function PortfolioPage() {
   return (
@@ -17,19 +20,19 @@ export default function PortfolioPage() {
         </PageTitle>
         <PortfolioCard
           image={Sophie}
-          header="Weather app"
+          badges={badgearray}
           secondarytitle="Up-to-date weather forecast"
           text="Hello szia en vagyok az elso elem"
         />
         <PortfolioCard
           image={Sophie}
-          header="Weather app"
+          badges={["CSS"]}
           secondarytitle="Up-to-date weather forecast"
           text="Hello szia en vagyok az elso elem"
         />
         <PortfolioCard
           image={Sophie}
-          header="Weather app"
+          badges={badgearray}
           secondarytitle="Up-to-date weather forecast"
           text="Hello szia en vagyok az elso elem"
         />
@@ -38,16 +41,18 @@ export default function PortfolioPage() {
   );
 }
 
-export function PortfolioCard({ image, header, secondarytitle, text }) {
+export function PortfolioCard({ image, badges, secondarytitle, text }) {
   return (
     <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
         <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
           <Image alt="kep" src={image} layout="fill" objectFit="cover" />
         </div>
-        <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-primary font-semibold">
-            {header}
+        <div className="py-6 px-6">
+          <div className="uppercase tracking-wide text-sm text-primary font-semibold flex gap-2">
+            {badges.map((badge, index) => (
+              <Badge key={index}>{badge}</Badge>
+            ))}
           </div>
           <h3 className="mt-1 text-lg leading-tight font-medium text-black ">
             {secondarytitle}
