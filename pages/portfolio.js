@@ -5,6 +5,7 @@ import Image from "next/image";
 import Badge from "../components/badge";
 import * as fs from "fs";
 import path from "path";
+import { PortfolioButton } from "../components/button";
 
 const projectsFile = path.join(process.cwd(), "data", "projects.json");
 export async function getStaticProps() {
@@ -51,7 +52,7 @@ export function PortfolioCard({ image, badges, title, text }) {
         <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
           <Image alt="kep" src={image} layout="fill" objectFit="cover" />
         </div>
-        <div className="py-6 px-6">
+        <div className="py-4 px-6">
           <div className="uppercase tracking-wide text-sm text-primary font-semibold flex gap-2">
             {badges.map((badge, index) => (
               <Badge key={index}>{badge}</Badge>
@@ -61,6 +62,14 @@ export function PortfolioCard({ image, badges, title, text }) {
             {title}
           </h3>
           <p className="mt-2 text-black">{text}</p>
+          <div className="flex gap-4 mt-4">
+            <PortfolioButton portfolioIcon="fab fa-github">
+              Github
+            </PortfolioButton>
+            <PortfolioButton portfolioIcon="fas fa-chalkboard">
+              Demo
+            </PortfolioButton>
+          </div>
         </div>
       </div>
     </article>
