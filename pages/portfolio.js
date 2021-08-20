@@ -2,12 +2,22 @@ import Head from "next/head";
 import { Layout } from "../components/layout";
 import PageTitle, { Strong } from "../components/pageTitle";
 import Image from "next/image";
-import Sophie from "../public/Sophie.jpg";
 import Badge from "../components/badge";
+import * as fs from "fs";
+import path from "path";
 
-const badgearray = ["HTML", "CSS", "React", "JS"];
+const projectsFile = path.join(process.cwd(), "data", "projects.json");
+export async function getStaticProps() {
+  const fileContents = fs.readFileSync(projectsFile, "utf-8");
+  const data = JSON.parse(fileContents);
+  return {
+    props: {
+      projects: data,
+    },
+  };
+}
 
-export default function PortfolioPage() {
+export default function PortfolioPage({ projects }) {
   return (
     <>
       <Head>
@@ -18,30 +28,23 @@ export default function PortfolioPage() {
           My
           <Strong> Portfolio</Strong>
         </PageTitle>
-        <PortfolioCard
-          image={Sophie}
-          badges={badgearray}
-          secondarytitle="Up-to-date weather forecast"
-          text="Hello szia en vagyok az elso elem"
-        />
-        <PortfolioCard
-          image={Sophie}
-          badges={["CSS"]}
-          secondarytitle="Up-to-date weather forecast"
-          text="Hello szia en vagyok az elso elem"
-        />
-        <PortfolioCard
-          image={Sophie}
-          badges={badgearray}
-          secondarytitle="Up-to-date weather forecast"
-          text="Hello szia en vagyok az elso elem"
-        />
+        <div>
+          {projects.map((project, index) => (
+            <PortfolioCard
+              key={index}
+              image={`/${project.image}`}
+              badges={project.badges}
+              text={project.description}
+              title={project.title}
+            />
+          ))}
+        </div>
       </Layout>
     </>
   );
 }
 
-export function PortfolioCard({ image, badges, secondarytitle, text }) {
+export function PortfolioCard({ image, badges, title, text }) {
   return (
     <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
@@ -55,7 +58,7 @@ export function PortfolioCard({ image, badges, secondarytitle, text }) {
             ))}
           </div>
           <h3 className="mt-1 text-lg leading-tight font-medium text-black ">
-            {secondarytitle}
+            {title}
           </h3>
           <p className="mt-2 text-black">{text}</p>
         </div>

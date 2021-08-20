@@ -1,0 +1,20 @@
+[
+  {
+    "title": "404Error",
+    "description": "text",
+    "badges": ["HTML", "CSS"],
+    "image": "Sophie.jpg"
+  },
+  {
+    "title": "Weather app",
+    "description": "text",
+    "badges": ["HTML", "CSS", "JS", "Tailwind"],
+    "image": "Sophie.jpg"
+  },
+  {
+    "title": "Recipe",
+    "description": "text",
+    "badges": ["HTML", "CSS", "JS", "Tailwind"],
+    "image": "Sophie.jpg"
+  }
+]
