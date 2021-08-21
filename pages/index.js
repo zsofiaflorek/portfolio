@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Sophie from "../public/Sophie.jpg";
+import Professional from "../public/professional.jpg";
 import { Layout } from "../components/layout";
 import { Button } from "../components/button";
 
@@ -17,9 +17,8 @@ export default function Home() {
             <Image
               layout="responsive"
               className="rounded-xl"
-              src={Sophie}
+              src={Professional}
               alt="profile picture"
-              priority
             />
           </div>
         </div>
