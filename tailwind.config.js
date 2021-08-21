@@ -17,6 +17,7 @@ module.exports = {
       "on-primary": colors.white,
     },
     fontSize: {
+      xs: ["0.68rem", "1rem"],
       sm: ["0.875rem", "1.5rem"],
       base: ["1rem", "1.625rem"],
       md: ["1.125rem", "1.67rem"],

@@ -4,6 +4,7 @@ import { Card, CVCard } from "../components/card";
 import { Button } from "../components/button";
 import Personal from "../public/personal.jpg";
 import Image from "next/image";
+import PageTitle, { Strong } from "../components/pageTitle";
 
 export default function AboutPage() {
   return (
@@ -12,9 +13,10 @@ export default function AboutPage() {
         <title>Zsofia Florek - About</title>
       </Head>
       <Layout>
-        <h1 className="uppercase text-black text-xxl font-bold my-6 text-center">
-          About <strong className="text-primary">Me</strong>
-        </h1>
+        <PageTitle>
+          About
+          <Strong> Me</Strong>
+        </PageTitle>
         <Card>
           <div className="lg:flex lg:items-center lg:gap-6">
             <div className="hidden lg:block w-[25%] lg:flex-1">
