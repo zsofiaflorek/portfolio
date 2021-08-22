@@ -3,6 +3,7 @@ import { Layout } from "../components/layout";
 import PageTitle, { Strong } from "../components/pageTitle";
 import { Card } from "../components/card";
 import classNames from "classnames";
+import GoogleMapReact from "google-map-react";
 
 export default function ContactPage() {
   return (
@@ -43,12 +44,13 @@ export default function ContactPage() {
             />
           </div>
         </div>
+        <MapCard />
       </Layout>
     </>
   );
 }
 
-export function ContactCard({ icon, title, text }) {
+function ContactCard({ icon, title, text }) {
   return (
     <Card>
       <div className="flex flex-col items-center">
@@ -61,5 +63,29 @@ export function ContactCard({ icon, title, text }) {
         <p>{text}</p>
       </div>
     </Card>
+  );
+}
+
+const mapCenter = { lat: 47.497913, lng: 19.040236 };
+
+function MapCard() {
+  return (
+    <Card>
+      <div className="h-96">
+        <GoogleMapReact
+          center={mapCenter}
+          defaultZoom={5}
+          bootstrapURLKeys={{ key: "AIzaSyBX-fTerWDai4QcQs39u-J7J2twRPRhUaQ" }}
+        >
+          <Marker lat={mapCenter.lat} lng={mapCenter.lng} />
+        </GoogleMapReact>
+      </div>
+    </Card>
+  );
+}
+
+function Marker() {
+  return (
+    <i className="fas fa-map-marker-alt transform -translate-x-1/2 -translate-y-full text-xl text-primary" />
   );
 }
