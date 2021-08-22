@@ -15,11 +15,34 @@ export default function ContactPage() {
           Contact
           <Strong> Me</Strong>
         </PageTitle>
-        <ContactCard
-          icon="fas fa-map-marker-alt"
-          title="My location"
-          text="Budapest, Hungary"
-        />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1">
+          <div className="md:col-span-2">
+            <ContactCard
+              icon="fas fa-map-marker-alt"
+              title="My location"
+              text="Budapest, Hungary"
+            />
+          </div>
+          <a
+            href="https://www.linkedin.com/in/zsofiaflorek/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:col-span-2"
+          >
+            <ContactCard
+              icon="fab fa-linkedin-in"
+              title="LinkedIn"
+              text="linkedin.com/in/zsofiaflorek"
+            />
+          </a>
+          <div className="md:col-span-2 md:col-start-2 lg:col-start-auto">
+            <ContactCard
+              icon="fas fa-envelope"
+              title="Email address"
+              text="zsofia.florek@gmail.com"
+            />
+          </div>
+        </div>
       </Layout>
     </>
   );
