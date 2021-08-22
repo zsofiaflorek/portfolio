@@ -8,8 +8,8 @@ export function Menu() {
         <ul className="flex gap-10 justify-end py-4">
           <MenuItem href="/">Home</MenuItem>
           <MenuItem href="/about">About</MenuItem>
-          <MenuItem href="/">Portfolio</MenuItem>
-          <MenuItem href="/">Contact</MenuItem>
+          <MenuItem href="/portfolio">Portfolio</MenuItem>
+          <MenuItem href="/contact">Contact</MenuItem>
         </ul>
       </div>
     </nav>
