@@ -1,0 +1,20 @@
+[
+  {
+    "title": "404Error",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit lorem nec tortor luctus, at pellentesque enim dictum. Vivamus commodo est in nunc iaculis porttitor. Nulla efficitur pulvinar ante vitae finibus. Cras molestie dui in nisi interdum, id rutrum metus laoreet. Vivamus egestas facilisis nisi, at ornare odio pharetra in. Proin aliquam elit sed viverra imperdiet. Donec luctus dolor in nunc tincidunt eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vel tincidunt mauris. Ut vel vehicula velit. Sed ultricies tortor ac porta vulputate. Cras scelerisque fermentum porttitor.",
+    "badges": ["HTML", "CSS"],
+    "image": "Sophie.jpg"
+  },
+  {
+    "title": "Weather app",
+    "description": "text",
+    "badges": ["HTML", "CSS", "JS", "Tailwind"],
+    "image": "Sophie.jpg"
+  },
+  {
+    "title": "Recipe",
+    "description": "text",
+    "badges": ["HTML", "CSS", "JS", "Tailwind"],
+    "image": "Sophie.jpg"
+  }
+]
