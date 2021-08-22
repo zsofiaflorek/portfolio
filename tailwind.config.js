@@ -15,6 +15,7 @@ module.exports = {
       primary: colors.pink[700],
       progressbar: colors.gray[200],
       "on-primary": colors.white,
+      "primary-light": colors.pink[50],
     },
     fontSize: {
       xs: ["0.68rem", "1rem"],
