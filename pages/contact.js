@@ -4,6 +4,8 @@ import PageTitle, { Strong } from "../components/pageTitle";
 import { Card } from "../components/card";
 import classNames from "classnames";
 import GoogleMapReact from "google-map-react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Button } from "../components/button";
 
 export default function ContactPage() {
   return (
@@ -44,7 +46,10 @@ export default function ContactPage() {
             />
           </div>
         </div>
-        <MapCard />
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <MapCard />
+          <ContactFormCard />
+        </div>
       </Layout>
     </>
   );
@@ -87,5 +92,39 @@ function MapCard() {
 function Marker() {
   return (
     <i className="fas fa-map-marker-alt transform -translate-x-1/2 -translate-y-full text-xl text-primary" />
+  );
+}
+
+function ContactFormCard() {
+  const [state, handleSubmit] = useForm("mnqlowjq");
+  if (state.succeeded) {
+    return (
+      <Card>
+        <p>Thank you for contacting me!</p>
+      </Card>
+    );
+  }
+  return (
+    <Card>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <input name="name" placeholder="Name" />
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+        </div>
+        <div>
+          <input name="email" placeholder="Email" />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </div>
+        <div>
+          <textarea name="message" placeholder="Message" />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </div>
+        <Button disabled={state.submitting}>Send message</Button>
+      </form>
+    </Card>
   );
 }
