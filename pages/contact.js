@@ -106,24 +106,37 @@ function ContactFormCard() {
   }
   return (
     <Card>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="h-full">
         <div>
-          <input name="name" placeholder="Name" />
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
+          <div className="max-w-full border-b border-prose py-2">
+            <input name="name" placeholder="Name" />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+          </div>
+          <div className="max-w-full border-b border-prose py-2">
+            <input name="email" placeholder="Email" />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div className="max-w-full border-b border-prose py-2 mb-6 ">
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="h-full w-full resize-y"
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
+          <Button disabled={state.submitting}>
+            <i className="fas fa-paper-plane mr-2" />
+            Send message
+          </Button>
         </div>
-        <div>
-          <input name="email" placeholder="Email" />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
-        </div>
-        <div>
-          <textarea name="message" placeholder="Message" />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-        </div>
-        <Button disabled={state.submitting}>Send message</Button>
       </form>
     </Card>
   );
