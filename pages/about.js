@@ -48,7 +48,14 @@ export default function AboutPage() {
                 to making connections with people and focusing on their needs
                 and goals.
               </p>
-              <Button icon="fas fa-download">Download my CV</Button>
+              <Button
+                icon="fas fa-download"
+                href="./zsofia-florek-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download my CV
+              </Button>
             </div>
           </div>
         </Card>
