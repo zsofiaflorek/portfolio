@@ -2,7 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Professional from "../public/professional.jpg";
 import { Layout } from "../components/layout";
-import { Button } from "../components/button";
+import { AnchorButton } from "../components/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,9 +32,11 @@ export default function Home() {
             I eat E-80 cake
           </h2>
           <p className="my-6">{description}</p>
-          <Button heavy icon="fas fa-th-list">
-            Portfolio
-          </Button>
+          <Link href="/portfolio" passHref>
+            <AnchorButton heavy icon="fas fa-th-list">
+              Portfolio
+            </AnchorButton>
+          </Link>
         </div>
       </Layout>
     </>
