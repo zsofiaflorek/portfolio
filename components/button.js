@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import * as React from "react";
 
 export function Button({ children, heavy, icon }) {
   return (
@@ -14,7 +15,10 @@ export function Button({ children, heavy, icon }) {
   );
 }
 
-export function AnchorButton({ children, heavy, icon, ...rest }) {
+export const AnchorButton = React.forwardRef(function AnchorButton(
+  { children, heavy, icon, ...rest },
+  ref
+) {
   return (
     <a
       className={classNames(
@@ -22,12 +26,13 @@ export function AnchorButton({ children, heavy, icon, ...rest }) {
         { "font-semibold": heavy }
       )}
       {...rest}
+      ref={ref}
     >
       {icon ? <i className={classNames("mr-2", icon)} /> : null}
       {children}
     </a>
   );
-}
+});
 
 export function PortfolioButton({ children, portfolioIcon }) {
   return (
