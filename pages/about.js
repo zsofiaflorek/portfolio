@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Layout } from "../components/layout";
 import { Card, CVCard } from "../components/card";
-import { Button } from "../components/button";
+import { AnchorButton } from "../components/button";
 import Personal from "../public/personal.jpg";
 import Image from "next/image";
 import PageTitle, { Strong } from "../components/pageTitle";
@@ -48,7 +48,14 @@ export default function AboutPage() {
                 to making connections with people and focusing on their needs
                 and goals.
               </p>
-              <Button icon="fas fa-download">Download my CV</Button>
+              <AnchorButton
+                icon="fas fa-download"
+                href="./zsofia-florek-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download my CV
+              </AnchorButton>
             </div>
           </div>
         </Card>
