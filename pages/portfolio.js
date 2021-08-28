@@ -65,7 +65,7 @@ export function PortfolioCard({
     <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
         <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
-          <Image alt="kep" src={image} layout="fill" objectFit="cover" />
+          <Image alt="" src={image} layout="fill" objectFit="cover" />
         </div>
         <div className="py-4 px-6">
           <div className="uppercase tracking-wide text-sm text-primary font-semibold flex gap-2">
