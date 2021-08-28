@@ -16,14 +16,15 @@ export function Button({ children, heavy, icon }) {
 }
 
 export const AnchorButton = React.forwardRef(function AnchorButton(
-  { children, heavy, icon, ...rest },
+  { children, heavy, icon, className, ...rest },
   ref
 ) {
   return (
     <a
       className={classNames(
         "uppercase text-on-primary bg-primary px-4 py-2 rounded-md shadow-sm",
-        { "font-semibold": heavy }
+        { "font-semibold": heavy },
+        className
       )}
       {...rest}
       ref={ref}

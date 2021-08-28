@@ -38,11 +38,18 @@ export default function Home() {
               </p>
             ))}
           </div>
-          <Link href="/portfolio" passHref>
-            <AnchorButton heavy icon="fas fa-th-list">
-              Portfolio
-            </AnchorButton>
-          </Link>
+          <div>
+            <Link href="/portfolio" passHref>
+              <AnchorButton heavy icon="fas fa-th-list">
+                Portfolio
+              </AnchorButton>
+            </Link>
+            <Link href="/about" passHref>
+              <AnchorButton heavy icon="fas fa-user" className="ml-2.5">
+                Resume
+              </AnchorButton>
+            </Link>
+          </div>
         </div>
       </Layout>
     </>
