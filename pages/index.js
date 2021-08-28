@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Zsofia Florek - Personal Portfolio</title>
-        <meta name="description" content={description} />
+        <meta name="description" content={description.join(" ")} />
       </Head>
       <Layout className="lg:flex lg:items-center lg:gap-8 ">
         <div className="ProfilePictureFrame p-8 shadow rounded-xl mb-8 lg:w-[500px]">
@@ -26,24 +26,38 @@ export default function Home() {
         <div className="lg:flex-1">
           <span className="GreetingBox">Hello</span>
           <h1 className="uppercase text-black text-xl font-bold mt-6">
-            I&apos;m <strong className="text-primary">Zsofia Florek</strong>
+            I'm <strong className="text-primary">Zsofia Florek</strong>
           </h1>
           <h2 className="text-black text-lg uppercase font-semibold">
-            I eat E-80 cake
+            Junior Frontend Developer
           </h2>
-          <p className="my-6">{description}</p>
-          <Link href="/portfolio" passHref>
-            <AnchorButton heavy icon="fas fa-th-list">
-              Portfolio
-            </AnchorButton>
-          </Link>
+          <div className="mt-6 mb-8">
+            {description.map((sentence, index) => (
+              <p key={index} className="my-3.5">
+                {sentence}
+              </p>
+            ))}
+          </div>
+          <div>
+            <Link href="/portfolio" passHref>
+              <AnchorButton heavy icon="fas fa-th-list">
+                Portfolio
+              </AnchorButton>
+            </Link>
+            <Link href="/about" passHref>
+              <AnchorButton heavy icon="fas fa-user" className="ml-2.5">
+                Resume
+              </AnchorButton>
+            </Link>
+          </div>
         </div>
       </Layout>
     </>
   );
 }
 
-const description =
-  "With over 4 years of job experience and 2 degrees of separation. " +
-  "I studied Information Technology at University and later honed my skills through commercial and freelance experience." +
-  " My skills include PHP, Laravel, jQuery, database design, JavaScript and MySQL.";
+const description = [
+  "With over 4 years of job experience in various fields, I decided to pursue frontend development as my new full-time profession.",
+  "I am enthusiastic about React / Next.js and I'm a firm believer of semantic HTML and the mobile-first approach.",
+  "Check out my portfolio of example projects below!",
+];
