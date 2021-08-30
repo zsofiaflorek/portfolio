@@ -65,25 +65,43 @@ export default function AboutPage() {
             <SkillBar tech="HTML" percentage="40%" />
             <SkillBar tech="JS" percentage="70%" />
           </CVCard>
-          <CVCard title="Professional skills">
+          <CVCard title="Soft skills">
             <SkillBar tech="CSS" percentage="80%" />
             <SkillBar tech="HTML" percentage="40%" />
             <SkillBar tech="JS" percentage="70%" />
           </CVCard>
           <CVCard title="Experience">
             <TimelineItem
-              title="Deloitte forever"
-              subtitle="BSc in CSS"
-              timeframe="2019 - Present"
-              description="The University of British Columbia is a public research university with campuses in Vancouver and Kelowna, British Columbia."
+              title="Deloitte Ltd."
+              subtitle="Data Analyst"
+              timeframe="Aug 2019 - Present"
+              description="Facilitated the loading transformation and analysis of large accounting data sets, enabling the financial audit of many of the largest firms in Central Europe. Trained interns in Excel, T-SQL and alike."
+            />
+            <TimelineItem
+              title="Oney Ltd."
+              subtitle="Customer Relationship Management Intern"
+              timeframe="Mar 2019 - Aug 2019"
+              description="Provided operational support to the project leads such as managing Excel analytics and reporting from customer data. Partnered with managers to complete all essential reports on time. "
+            />
+            <TimelineItem
+              title="Gedeon Richter Plc."
+              subtitle="Analytical Chemist"
+              timeframe="Mar 2019 - Aug 2019"
+              description="Developed techniques for the analysis of drug products and validation of analytical methods. Implemented a method to resolve the differences between the Hungarian and US pharmaceutical quality assurance system, allowing the company to bring products to market faster while also saving millions of dollars in QA costs."
             />
           </CVCard>
           <CVCard title="Education">
             <TimelineItem
-              title="University of the Incarnate Word"
-              subtitle="BSc in CSSSSSS"
-              timeframe="2019 - Present"
-              description="The University of British Columbia is a public research university with campuses in Vancouver and Kelowna, British Columbia."
+              title="Corvinus University of Budapest"
+              subtitle="BSc in Business Information Systems"
+              timeframe="2017 - 2021"
+              description="The Business Information Systems at Corvinus University is a hybrid programme, offering courses in computer science while also teaching basics of business administration, with a special emphasis on IT management."
+            />
+            <TimelineItem
+              title="Szent Istvan University"
+              subtitle="BSc in Food Engineering"
+              timeframe="2014 - 2017"
+              description="I was provided a general knowledge of biology, chemistry, physics, and engineering, and special knowledge in food science, practical knowledge in food processing, preservation, and food development"
             />
           </CVCard>
         </div>
@@ -114,7 +132,7 @@ function TimelineItem({ title, subtitle, description, timeframe }) {
   return (
     <div className="TimelineItem">
       <h4 className="text-md font-semibold text-black uppercase">{title}</h4>
-      <div className="font-semibold my-2 text-black">
+      <div className="font-semibold my-1 text-black">
         {subtitle} | {timeframe}
       </div>
       <p>{description}</p>
