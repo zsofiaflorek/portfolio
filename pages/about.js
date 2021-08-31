@@ -61,9 +61,11 @@ export default function AboutPage() {
         </Card>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 my-6">
           <CVCard title="Professional skills">
-            <SkillBar tech="CSS" percentage="80%" />
-            <SkillBar tech="HTML" percentage="40%" />
-            <SkillBar tech="JS" percentage="70%" />
+            <SkillBar tech="JavaScript (ES6+)" percentage="60%" />
+            <SkillBar tech="React (CRA & Next.js)" percentage="80%" />
+            <SkillBar tech="HTML5 & CSS3" percentage="70%" />
+            <SkillBar tech="SQL" percentage="50%" />
+            <SkillBar tech="CI / CD automation" percentage="20%" />
           </CVCard>
           <CVCard title="Soft skills">
             <SkillBar tech="Conflict Handling" percentage="100%" />
