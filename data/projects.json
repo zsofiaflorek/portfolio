@@ -1,19 +1,26 @@
 [
   {
-    "title": "404Error",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit lorem nec tortor luctus, at pellentesque enim dictum. Vivamus commodo est in nunc iaculis porttitor. Nulla efficitur pulvinar ante vitae finibus. Cras molestie dui in nisi interdum, id rutrum metus laoreet. Vivamus egestas facilisis nisi, at ornare odio pharetra in. Proin aliquam elit sed viverra imperdiet. Donec luctus dolor in nunc tincidunt eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vel tincidunt mauris. Ut vel vehicula velit. Sed ultricies tortor ac porta vulputate. Cras scelerisque fermentum porttitor.",
-    "badges": ["HTML", "CSS"],
-    "image": "Sophie.jpg"
+    "title": "404 Error",
+    "description": [
+      "This was the first step on my way to becoming a frontend engineer.",
+      "After I had started to study basics of frontend development, I found this challenge on https://devchallenges.io.",
+      "Based on a given design, the desktop and mobile versions had to be implemented for an example 404 page.",
+      "Both the demo and the Github repo are available, check them out!"
+    ],
+    "badges": ["HTML5", "CSS3"],
+    "image": "error404.png",
+    "github-url": "https://github.com/zsofiaflorek/portfolio-404",
+    "demo-url": "https://404.zflorek.com"
   },
   {
     "title": "Weather app",
-    "description": "text",
+    "description": ["text"],
     "badges": ["HTML", "CSS", "JS", "Tailwind"],
     "image": "Sophie.jpg"
   },
   {
     "title": "Recipe",
-    "description": "text",
+    "description": ["text"],
     "badges": ["HTML", "CSS", "JS", "Tailwind"],
     "image": "Sophie.jpg"
   }

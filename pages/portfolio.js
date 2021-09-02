@@ -35,8 +35,16 @@ export default function PortfolioPage({ projects }) {
               key={index}
               image={`/${project.image}`}
               badges={project.badges}
-              text={project.description}
+              text={project.description.map((sentence, index) => {
+                return (
+                  <p key={index} className="mt-1.5">
+                    {sentence}
+                  </p>
+                );
+              })}
               title={project.title}
+              repoUrl={project["github-url"]}
+              demoUrl={project["demo-url"]}
             />
           ))}
         </div>
@@ -45,12 +53,19 @@ export default function PortfolioPage({ projects }) {
   );
 }
 
-export function PortfolioCard({ image, badges, title, text }) {
+export function PortfolioCard({
+  image,
+  badges,
+  title,
+  text,
+  repoUrl,
+  demoUrl,
+}) {
   return (
     <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
         <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
-          <Image alt="kep" src={image} layout="fill" objectFit="cover" />
+          <Image alt="" src={image} layout="fill" objectFit="cover" />
         </div>
         <div className="py-4 px-6">
           <div className="uppercase tracking-wide text-sm text-primary font-semibold flex gap-2">
@@ -63,10 +78,10 @@ export function PortfolioCard({ image, badges, title, text }) {
           </h3>
           <p className="mt-2 text-black">{text}</p>
           <div className="flex gap-4 mt-4">
-            <PortfolioButton portfolioIcon="fab fa-github">
+            <PortfolioButton href={repoUrl} portfolioIcon="fab fa-github">
               Github
             </PortfolioButton>
-            <PortfolioButton portfolioIcon="fas fa-chalkboard">
+            <PortfolioButton portfolioIcon="fas fa-chalkboard" href={demoUrl}>
               Demo
             </PortfolioButton>
           </div>
