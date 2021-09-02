@@ -1,5 +1,17 @@
 [
   {
+    "title": "Portfolio",
+    "description": [
+      "This portfolio website was built as a kind of masterwork to sum up the initial phase of my frontend development studies.",
+      "Building on top of my HTML / CSS / ES6 / React foundation, I explore the realms of static-site-generation and utility-first CSS by utilizing Next.js and Tailwind respectively.",
+      "I also utilized git & Github heavily, be sure to also check out all the issues and pull requests I wrote."
+    ],
+    "badges": ["Next.js", "React", "SSG", "Tailwind", "RWD"],
+    "image": "portfolio.png",
+    "github-url": "https://github.com/zsofiaflorek/portfolio",
+    "demo-url": "https://zflorek.com"
+  },
+  {
     "title": "404 Error",
     "description": [
       "This was the first step on my way to becoming a frontend engineer.",
@@ -7,19 +19,13 @@
       "Based on a given design, the desktop and mobile versions had to be implemented for an example 404 page.",
       "Both the demo and the Github repo are available, check them out!"
     ],
-    "badges": ["HTML5", "CSS3"],
+    "badges": ["HTML5", "CSS3", "RWD"],
     "image": "error404.png",
     "github-url": "https://github.com/zsofiaflorek/portfolio-404",
     "demo-url": "https://404.zflorek.com"
   },
   {
     "title": "Weather app",
-    "description": ["text"],
-    "badges": ["HTML", "CSS", "JS", "Tailwind"],
-    "image": "Sophie.jpg"
-  },
-  {
-    "title": "Recipe",
     "description": ["text"],
     "badges": ["HTML", "CSS", "JS", "Tailwind"],
     "image": "Sophie.jpg"
