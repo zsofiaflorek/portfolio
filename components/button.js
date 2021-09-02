@@ -35,13 +35,18 @@ export const AnchorButton = React.forwardRef(function AnchorButton(
   );
 });
 
-export function PortfolioButton({ children, portfolioIcon }) {
+export function PortfolioButton({ children, portfolioIcon, href }) {
   return (
-    <button className="flex justify-center items-center px-3 py-2 text-black bg-white text-base rounded-md shadow-sm font-semibold">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={href}
+      className="flex justify-center items-center px-3 py-2 text-black bg-white text-base rounded-md shadow-sm font-semibold"
+    >
       {portfolioIcon ? (
         <i className={classNames("mr-2", portfolioIcon)} />
       ) : null}
       {children}
-    </button>
+    </a>
   );
 }
