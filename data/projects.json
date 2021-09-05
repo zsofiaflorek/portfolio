@@ -6,10 +6,22 @@
       "Building on top of my HTML / CSS / ES6 / React foundation, I explore the realms of static-site-generation and utility-first CSS by utilizing Next.js and Tailwind respectively.",
       "I also utilized git & Github heavily, be sure to also check out all the issues and pull requests I wrote."
     ],
-    "badges": ["Next.js", "React", "SSG", "Tailwind", "RWD"],
+    "badges": ["Next.js", "SSG", "Tailwind CSS", "RWD"],
     "image": "portfolio.png",
     "github-url": "https://github.com/zsofiaflorek/portfolio",
     "demo-url": "https://zflorek.com"
+  },
+  {
+    "title": "Weather app",
+    "description": [
+      "After a lot of JavaScript practice, I wanted to do something more significant than a \"Hello World\" project.",
+      "The idea for the project comes from https://devchallenges.io and through it I learned the \"Thinking in React\" approach while trying Create React App.",
+      "In addition to following the user stories and implementing the given Figma design, the task also required the use of an external API as the data source."
+    ],
+    "badges": ["Create React App", "React Router", "CSS Modules"],
+    "image": "weatherapp.png",
+    "github-url": "https://github.com/zsofiaflorek/weather-app",
+    "demo-url": "https://weatherapp.zflorek.com/"
   },
   {
     "title": "404 Error",
@@ -23,11 +35,5 @@
     "image": "error404.png",
     "github-url": "https://github.com/zsofiaflorek/portfolio-404",
     "demo-url": "https://404.zflorek.com"
-  },
-  {
-    "title": "Weather app",
-    "description": ["text"],
-    "badges": ["HTML", "CSS", "JS", "Tailwind"],
-    "image": "Sophie.jpg"
   }
 ]
