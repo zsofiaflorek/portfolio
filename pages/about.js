@@ -41,12 +41,12 @@ export default function AboutPage() {
                   />
                 </div>
                 I have always been described as an extremely empathetic,
-                open-minded and supportive person. Since I grew up I have worked
-                in widely different fields, ranging from being an analytical
-                chemist at a pharmaceutical company to working on data analytics
-                at a Big Four. Throughout that, my heart always drives me back
-                to making connections with people and focusing on their needs
-                and goals.
+                open-minded and supportive person. Ever since I started my
+                professional life I have worked in widely different fields,
+                ranging from being an analytical chemist at a pharmaceutical
+                company to working on data analytics at a Big Four. Throughout
+                that, my heart always drives me back to technology, using my
+                technical ability to make an impact.
               </p>
               <AnchorButton
                 icon="fas fa-download"
