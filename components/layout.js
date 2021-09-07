@@ -7,7 +7,7 @@ export function Layout({ children, className }) {
       <Menu />
       <main
         className={classNames(
-          "mt-10 mb-16 px-6 md:max-w-screen-md md:mx-auto lg:max-w-screen-lg",
+          "mt-10 mb-16 px-4 sm:px-6 md:max-w-screen-md md:mx-auto lg:max-w-screen-lg",
           className
         )}
       >
