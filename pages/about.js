@@ -82,7 +82,7 @@ export default function AboutPage() {
             />
             <TimelineItem
               title="Oney Ltd."
-              subtitle="Customer Relationship Management Intern"
+              subtitle="CRM Intern"
               timeframe="Mar 2019 - Aug 2019"
               description="Provided operational support to the project leads such as managing Excel analytics and reporting from customer data. Partnered with managers to complete all essential reports on time. "
             />
