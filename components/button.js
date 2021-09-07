@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 export function Button({ children, heavy, icon, ...rest }) {
   return (
-    <a
+    <button
       className={classNames(
         "uppercase text-on-primary bg-primary px-4 py-2 rounded-md shadow-sm",
         { "font-semibold": heavy }
@@ -11,17 +11,17 @@ export function Button({ children, heavy, icon, ...rest }) {
     >
       {icon ? <i className={classNames("mr-2", icon)} /> : null}
       {children}
-    </a>
+    </button>
   );
 }
 
 export function PortfolioButton({ children, portfolioIcon }) {
   return (
-    <a className="flex justify-center items-center px-3 py-2 text-black bg-white text-base rounded-md shadow-sm font-semibold">
+    <button className="flex justify-center items-center px-3 py-2 text-black bg-white text-base rounded-md shadow-sm font-semibold">
       {portfolioIcon ? (
         <i className={classNames("mr-2", portfolioIcon)} />
       ) : null}
       {children}
-    </a>
+    </button>
   );
 }
