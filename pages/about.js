@@ -89,7 +89,7 @@ export default function AboutPage() {
             <TimelineItem
               title="Gedeon Richter Plc."
               subtitle="Analytical Chemist"
-              timeframe="Mar 2019 - Aug 2019"
+              timeframe="Nov 2016 - Nov 2017"
               description="Developed techniques for the analysis of drug products and validation of analytical methods. Implemented a method to resolve the differences between the Hungarian and US pharmaceutical quality assurance system, allowing the company to bring products to market faster while also saving millions of dollars in QA costs."
             />
           </CVCard>
