@@ -14,6 +14,11 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             async
           />
+          <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+          ></script>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>

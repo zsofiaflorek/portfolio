@@ -132,6 +132,10 @@ function ContactFormCard() {
               errors={state.errors}
             />
           </div>
+          <div
+            className="g-recaptcha"
+            data-sitekey="6LdROUwcAAAAAKE151opBD9uEqsXF0jfCf9MC_MQ"
+          ></div>
           <Button disabled={state.submitting}>
             <i className="fas fa-paper-plane mr-2" />
             Send message
