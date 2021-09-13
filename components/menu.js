@@ -7,7 +7,7 @@ export function Menu() {
         <h1 className="block text-primary text-base text-center sm:flex sm:flex-shrink-0 sm:text-md">
           Zsofia Florek
         </h1>
-        <ul className="flex gap-2 justify-between overflow-hidden py-2 text-sm sm:text-md sm:gap-6 sm:py-4 md:gap-10">
+        <ul className="flex gap-2 justify-between overflow-hidden py-2 text-sm sm:text-md sm:gap-2 sm:py-4  md:gap-6">
           <MenuItem href="/">Home</MenuItem>
           <MenuItem href="/about">About</MenuItem>
           <MenuItem href="/portfolio">Portfolio</MenuItem>
