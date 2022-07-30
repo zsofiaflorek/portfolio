@@ -61,9 +61,10 @@ export default function AboutPage() {
         </Card>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 my-6">
           <CVCard title="Professional skills">
-            <SkillBar tech="JavaScript (ES6+)" percentage="60%" />
-            <SkillBar tech="React (CRA & Next.js)" percentage="80%" />
-            <SkillBar tech="HTML5 & CSS3" percentage="70%" />
+            <SkillBar tech="JavaScript (ES6+)" percentage="70%" />
+            <SkillBar tech="Angular v14" percentage="60%" />
+            <SkillBar tech="React (CRA & Next.js)" percentage="60%" />
+            <SkillBar tech="HTML5 & CSS3" percentage="80%" />
             <SkillBar tech="SQL" percentage="50%" />
             <SkillBar tech="CI / CD automation" percentage="20%" />
           </CVCard>
@@ -75,9 +76,15 @@ export default function AboutPage() {
           </CVCard>
           <CVCard title="Experience">
             <TimelineItem
+              title="Supercharge Ltd."
+              subtitle="JavaScript Developer"
+              timeframe="Nov 2021 - Present"
+              description=" Worked on project for large enterprise client. Responsible for implementation of new UI components according to Figma designs, fixing bugs and helping out teammates."
+            />
+            <TimelineItem
               title="Deloitte Ltd."
               subtitle="Data Analyst"
-              timeframe="Aug 2019 - Present"
+              timeframe="Aug 2019 - Oct 2021"
               description="Facilitated the loading transformation and analysis of large accounting data sets, enabling the financial audit of many of the largest firms in Central Europe. Trained interns in Excel, T-SQL and alike."
             />
             <TimelineItem
