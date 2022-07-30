@@ -69,10 +69,10 @@ export default function AboutPage() {
             <SkillBar tech="CI / CD automation" percentage="20%" />
           </CVCard>
           <CVCard title="Soft skills">
-            <SkillBar tech="Conflict Handling" percentage="100%" />
+            <SkillBar tech="Ownership" percentage="100%" />
             <SkillBar tech="Critical Thinking" percentage="80%" />
-            <SkillBar tech="Empathy" percentage="100%" />
-            <SkillBar tech="Adaptability " percentage="90%" />
+            <SkillBar tech="Mentorship" percentage="70%" />
+            <SkillBar tech="Scrum" percentage="90%" />
           </CVCard>
           <CVCard title="Experience">
             <TimelineItem
