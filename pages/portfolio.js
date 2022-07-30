@@ -78,12 +78,16 @@ export function PortfolioCard({
           </h3>
           <p className="mt-2 text-black">{text}</p>
           <div className="flex gap-4 mt-4">
-            <PortfolioButton href={repoUrl} portfolioIcon="fab fa-github">
-              Github
-            </PortfolioButton>
-            <PortfolioButton portfolioIcon="fas fa-chalkboard" href={demoUrl}>
-              Demo
-            </PortfolioButton>
+            {repoUrl ? (
+              <PortfolioButton href={repoUrl} portfolioIcon="fab fa-github">
+                Github
+              </PortfolioButton>
+            ) : null}
+            {demoUrl ? (
+              <PortfolioButton portfolioIcon="fas fa-chalkboard" href={demoUrl}>
+                Demo
+              </PortfolioButton>
+            ) : null}
           </div>
         </div>
       </div>

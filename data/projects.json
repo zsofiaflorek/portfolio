@@ -1,5 +1,15 @@
 [
   {
+    "title": "OSN+",
+    "description": [
+      "I joined Supercharge in 2021 and immediately started to work on the OSN+ project - a Netflix competitor - as a frontend developer.",
+      "As part of a scrum team day to day I work on implementing new features, updating existing functionality, fixing bugs and even helping out teammates as often as I can."
+    ],
+    "badges": ["Angular14", "TypeScript", "NgRx", "RxJS"],
+    "image": "osn.png",
+    "demo-url": "https://osnplus.com/"
+  },
+  {
     "title": "Portfolio",
     "description": [
       "This portfolio website was built as a kind of masterwork to sum up the initial phase of my frontend development studies.",
