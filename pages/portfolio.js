@@ -64,7 +64,7 @@ export function PortfolioCard({
   return (
     <article className="bg-white rounded-xl shadow overflow-hidden mb-8">
       <div className="md:flex">
-        <div className="relative h-48 w-full md:w-48 md:flex-shrink-0">
+        <div className="relative h-48 w-full md:w-56 lg:w-80 md:flex-shrink-0">
           <Image alt="" src={image} layout="fill" objectFit="cover" />
         </div>
         <div className="py-4 px-6">
@@ -78,12 +78,16 @@ export function PortfolioCard({
           </h3>
           <p className="mt-2 text-black">{text}</p>
           <div className="flex gap-4 mt-4">
-            <PortfolioButton href={repoUrl} portfolioIcon="fab fa-github">
-              Github
-            </PortfolioButton>
-            <PortfolioButton portfolioIcon="fas fa-chalkboard" href={demoUrl}>
-              Demo
-            </PortfolioButton>
+            {repoUrl ? (
+              <PortfolioButton href={repoUrl} portfolioIcon="fab fa-github">
+                Github
+              </PortfolioButton>
+            ) : null}
+            {demoUrl ? (
+              <PortfolioButton portfolioIcon="fas fa-chalkboard" href={demoUrl}>
+                Demo
+              </PortfolioButton>
+            ) : null}
           </div>
         </div>
       </div>
