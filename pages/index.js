@@ -16,10 +16,11 @@ export default function Home() {
         <div className="ProfilePictureFrame p-8 shadow rounded-xl mb-8 lg:w-[500px]">
           <div className=" bg-white rounded-xl ">
             <Image
-              layout="responsive"
               className="rounded-xl"
               src={Professional}
               alt="profile picture"
+              width={800}
+              height={600}
             />
           </div>
         </div>
