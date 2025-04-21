@@ -40,13 +40,13 @@ export default function AboutPage() {
                     priority
                   />
                 </div>
-                I have always been described as an extremely empathetic,
-                open-minded and supportive person. Ever since I started my
-                professional life I have worked in widely different fields,
-                ranging from being an analytical chemist at a pharmaceutical
-                company to working on data analytics at a Big Four. Throughout
-                that, my heart always drives me back to technology, using my
-                technical ability to make an impact.
+                Empathetic, curious, and impact-driven — I’ve worked in pharma,
+                data analytics, and now software development, where I’ve found
+                the ideal blend of creativity, logic, and collaboration. I lead
+                a small team, value clear communication between product and
+                engineering, and thrive when building meaningful solutions. My
+                main focus is frontend with React and TypeScript, but I’m also
+                diving deeper into backend with C# and C++.
               </p>
               <AnchorButton
                 icon="fas fa-download"
@@ -76,9 +76,15 @@ export default function AboutPage() {
           </CVCard>
           <CVCard title="Experience">
             <TimelineItem
+              title="CaptureAge Ltd."
+              subtitle="Software Engineer - Product Lead"
+              timeframe="May 2023 - Present"
+              description="Experienced in managing agile, cross-functional teams and driving the delivery of core product features, I balance technical contributions with strategic decision-making to ensure product success. As a frontend lead at CaptureAge, I architected scalable solutions, mentored junior developers, and prioritized user-centric design to deliver high-quality, impactful results."
+            />
+            <TimelineItem
               title="Supercharge Ltd."
               subtitle="JavaScript Developer"
-              timeframe="Nov 2021 - Present"
+              timeframe="Nov 2021 - May 2023"
               description=" Worked on project for large enterprise client. Responsible for implementation of new UI components according to Figma designs, fixing bugs and helping out teammates."
             />
             <TimelineItem
@@ -86,12 +92,6 @@ export default function AboutPage() {
               subtitle="Data Analyst"
               timeframe="Aug 2019 - Oct 2021"
               description="Facilitated the loading transformation and analysis of large accounting data sets, enabling the financial audit of many of the largest firms in Central Europe. Trained interns in Excel, T-SQL and alike."
-            />
-            <TimelineItem
-              title="Oney Ltd."
-              subtitle="CRM Intern"
-              timeframe="Mar 2019 - Aug 2019"
-              description="Provided operational support to the project leads such as managing Excel analytics and reporting from customer data. Partnered with managers to complete all essential reports on time. "
             />
             <TimelineItem
               title="Gedeon Richter Plc."

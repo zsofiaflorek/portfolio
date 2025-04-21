@@ -29,7 +29,7 @@ export default function Home() {
             I'm <strong className="text-primary">Zsofia Florek</strong>
           </h1>
           <h2 className="text-black text-lg uppercase font-semibold">
-            Junior Frontend Developer
+            Frontend Developer
           </h2>
           <div className="mt-6 mb-8">
             {description.map((sentence, index) => (
@@ -57,7 +57,10 @@ export default function Home() {
 }
 
 const description = [
-  "With over 4 years of job experience in various fields, I decided to pursue frontend development as my new full-time profession.",
-  "I am enthusiastic about React / Next.js and I'm a firm believer of semantic HTML and the mobile-first approach.",
-  "Check out my portfolio of example projects below!",
+  "Frontend-focused developer with a strong interest in building clear, intuitive user experiences.",
+  "Currently part of the Capture Age team, where we develop real-time analytical overlays for Age of Empires II — combining performance-sensitive UI with rich data visualization.",
+  "Leading a small dev team has taught me a lot about communication, feedback, and creating an environment where people can grow.",
+  "I care deeply about aligning product and engineering, and believe that open, ongoing collaboration between the two is essential for building thoughtful features.",
+  "While most of my experience is on the frontend, I’m also diving into backend development. I’m actively learning C# and C++ to broaden my perspective and better understand how systems fit together across the stack.",
+  "My previous work includes esports tools, internal dashboards, and marketing websites. I approach every project with a mix of curiosity, structure, and a strong focus on user needs — whether I’m writing code, reviewing PRs, or shaping product ideas with the team.",
 ];
