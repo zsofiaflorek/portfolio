@@ -3,7 +3,6 @@ import { Layout } from "../components/layout";
 import PageTitle, { Strong } from "../components/pageTitle";
 import { Card } from "../components/card";
 import classNames from "classnames";
-import GoogleMapReact from "google-map-react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "../components/button";
 
@@ -76,15 +75,7 @@ const mapCenter = { lat: 47.497913, lng: 19.040236 };
 function MapCard() {
   return (
     <Card>
-      <div className="h-96">
-        <GoogleMapReact
-          center={mapCenter}
-          defaultZoom={5}
-          bootstrapURLKeys={{ key: "AIzaSyBX-fTerWDai4QcQs39u-J7J2twRPRhUaQ" }}
-        >
-          <Marker lat={mapCenter.lat} lng={mapCenter.lng} />
-        </GoogleMapReact>
-      </div>
+      <div className="h-96"></div>
     </Card>
   );
 }
