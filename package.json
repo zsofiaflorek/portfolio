@@ -12,12 +12,10 @@
   },
   "dependencies": {
     "@formspree/react": "^2.2.3",
-    "@panelbear/panelbear-nextjs": "^1.0.4",
     "classnames": "^2.3.1",
-    "google-map-react": "^2.1.10",
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "12.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
